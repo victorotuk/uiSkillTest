@@ -1,0 +1,21 @@
+{
+  "name": "uiSkillTest",
+  "version": "0.0.1",
+  "description": "Scrape stuff",
+  "main": "server.js",
+  "author": "Victor/Dine",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "cheerio": "latest",
+    "express": "latest",
+    "npm": "^6.1.0",
+    "request": "latest"
+  },
+  "engine": "node >=0.6.x",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

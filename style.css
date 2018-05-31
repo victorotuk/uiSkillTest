@@ -1,0 +1,51 @@
+
+li{
+  list-style:none;
+  padding-top:5px;
+  padding-bottom:5px;
+  border-bottom: 1px solid 	#ff0067;
+  border-width:thin;
+  color: 	white;
+}
+
+li:hover{
+  color:black;
+  background-color: white;
+  text-decoration: none;
+}
+
+.ministersNameTabs{
+  width:25%;
+  margin-left:0px;
+  text-decoration: :none;
+}
+
+.ministersNameTabs a:hover{
+  text-decoration:none;
+}
+
+.ministersNameTabs a{
+  text-decoration:none;
+}
+
+
+.ministersNameTabs h3{
+  color:#ff0067;
+  border-bottom:3px solid 	#ff0067;
+  padding:5px;
+  margin-left:10px;;
+}
+
+.ministersNameTabs ul{
+padding-left:2px;
+margin-left:20px;
+background-color: black;
+border:1px solid #ff0067;
+}
+
+.text{
+
+}
+
+
+.pic{}
