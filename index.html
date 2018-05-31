@@ -1,30 +1,33 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="ministerList" ng-csp>
+<html lang="en" ng-app="ministerList" >
 <head>
   <meta charset = "UTF-8">
   <title>Ministers UI Demo</title>
   <link rel="stylesheet" href="style.css" type="text/css"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
 </head>
 
 <body  ng-controller="ministerListController">
-<div class=main>
+<div class="main">
+<div class="bridge">
+  <h4>Please select a minister to display their information</h4>
+</div>
+
 <div class = "ministersNameTabs" >
 <h3>Cabinet</h3>
   <ul>
-    <a href='#' ><li ng-repeat="item in data" ng-click='go=!go'>
+<a href="#" ng-click="toggle = !toggle" ng-class="{'aActive':toggle}"><li ng-repeat="item in data" ng-click="displayMin(item)">
         {{item.name}}
     </li></a>
     </ul>
 </div>
 <div class = "ministersView">
-  <div class='img'>
-    <img ng-src="{{item.img}}" class ="pic" ng-show="go">
-  </div>
-  <div class=text ng-show="go">
-    <p>perter<p>
-    <p>{{item.name}}</p>
-    <p>{{item.titles}}</p>
+    <img ng-src="{{currentMin.img}}" class="pic">
+
+  <div class="text">
+    <p class= "nm" >{{currentMin.name}}</p>
+    <p ng-repeat="title in currentMin.titles">{{title}}</p>
 </div>
 </div>
 </div>

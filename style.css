@@ -14,7 +14,13 @@ li:hover{
   text-decoration: none;
 }
 
+.aActive{
+  color:black;
+  background-color: yellow;
+}
+
 .ministersNameTabs{
+  float:right;
   width:25%;
   margin-left:0px;
   text-decoration: :none;
@@ -26,6 +32,17 @@ li:hover{
 
 .ministersNameTabs a{
   text-decoration:none;
+}
+.main{
+
+    height:1100px;
+    position: static;
+}
+
+.ministersView{
+
+  width:75%;
+  margin-left:10px;
 }
 
 
@@ -43,9 +60,13 @@ background-color: black;
 border:1px solid #ff0067;
 }
 
-.text{
-
+.text .nm{
+color: #ff0067;
 }
 
 
-.pic{}
+.pic{
+  width:300px;
+  height:400px;
+  border-bottom:3px solid 	#ff0067;
+}

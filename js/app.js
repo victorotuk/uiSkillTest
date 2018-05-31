@@ -1,10 +1,7 @@
 
 var app = angular.module('ministerList', []);
 
-app.controller('ministerListController',function($scope,$http){
-  $scope.test ="test";
-
-
+app.controller('ministerListController', function($scope,$http){
 
         var request = {
             method: 'get',
@@ -25,10 +22,7 @@ app.controller('ministerListController',function($scope,$http){
         // or server returns response with an error status.
     });
 
-    $scope.go = true;
-
-});
-
-app.factory('ministerListFactory',function($http){
-
+    $scope.displayMin = function(minister){
+     $scope.currentMin = minister;
+      }
 });
